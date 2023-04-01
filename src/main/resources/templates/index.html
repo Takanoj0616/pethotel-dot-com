@@ -1,0 +1,225 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Animal hotel</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="動物ホテルに特化したサイト">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1 id="logo"><a href="index.html"><img src="images/logo.png" alt="Animal Hotel"></a></h1>
+        <ul>
+            <li><a href="about.html">当サイトについて</a></li>
+            <li><a href="contact.html">お問い合わせ</a></li>
+        </ul>
+    </header>
+
+    <!--スライドショー（slick）-->
+    <aside id="mainimg">
+        <div class="mainimg">
+            <div><img src="images/1.jpg" alt=""></div>
+            <div><img src="images/2.jpg" alt=""></div>
+            <div><img src="images/3.jpg" alt=""></div>
+        </div>
+        <img src="images/kazari.png" alt="" class="kazari">
+    </aside>
+
+    <div id="container">
+
+        <main>
+
+            <section>
+
+                <h2>おススメホテル<span>Recommended Hotel</span></h2>
+
+                <div class="list-container">
+
+                    <div class="list">
+                        <figure><a href="item.html"><img src="images/sample/sample1.jpg" alt=""></a></figure>
+                        <div class="text">
+                            <h4><a href="item.html">サンプルホテル</a></h4>
+                            <p class="name"><a href="user.html">hana</a></p>
+                            <p>様々な動物でも泊まれるホテルとなっています。</p>
+                        </div>
+                        <span class="newicon">NEW</span>
+                        <span class="icon"><img src="images/time10.png" alt=""></span>
+                    </div>
+
+                    <div class="list">
+                        <figure><a href="item.html"><img src="images/sample/sample2.jpg" alt=""></a></figure>
+                        <div class="text">
+                            <h4><a href="item.html">サンプルホテル</a></h4>
+                            <p class="name"><a href="user.html">hana</a></p>
+                            <p>動物に安らげる環境を整えています。</p>
+                        </div>
+                        <span class="newicon">NEW</span>
+                        <span class="icon"><img src="images/time15.png" alt=""></span>
+                    </div>
+
+                    <div class="list">
+                        <figure><a href="item.html"><img src="images/sample/sample3.jpg" alt=""></a></figure>
+                        <div class="text">
+                            <h4><a href="item.html">サンプルホテル</a></h4>
+                            <p class="name"><a href="user.html">haru</a></p>
+                            <p>巨大なドックランがあります。</p>
+                        </div>
+                        <span class="newicon">NEW</span>
+                        <span class="icon"><img src="images/time30.png" alt=""></span>
+                    </div>
+
+                    <div class="list">
+                        <figure><a href="item.html"><img src="images/sample/sample4.jpg" alt=""></a></figure>
+                        <div class="text">
+                            <h4><a href="item.html">サンプルホテル</a></h4>
+                            <p class="name"><a href="user.html">yuta</a></p>
+                            <p>環境に配慮したホテル構造となっています。</p>
+                        </div>
+                        <span class="newicon">NEW</span>
+                        <span class="icon"><img src="images/time60.png" alt=""></span>
+                    </div>
+
+                </div>
+
+            </section>
+
+            <section>
+
+                <h2>お知らせ<span>What's New</span></h2>
+
+                <dl id="new">
+                    <dt>2023/03/27<span>その他</span></dt>
+                    <dd>おススメホテルアップしました。<span class="newicon">NEW</span></dd>
+                    <dt>20XX/00/00<span class="icon-bg1">新作ホテル</span></dt>
+                    <dd>サンプルテキスト。サンプルテキスト。サンプルテキスト。</dd>
+                    <dt>20XX/00/00<span class="icon-bg2">重要</span></dt>
+                    <dd>アカウント情報の変更となりました。</dd>
+                    <dt>20XX/00/00</dt>
+                    <dd>バグの修正を行いました</dd>
+                    <dt>20XX/00/00<span>その他</span></dt>
+                    <dd>サンプルテキスト。サンプルテキスト。サンプルテキスト。サンプルテキスト。サンプルテキスト。サンプルテキスト。サンプルテキスト。サンプルテキスト。サンプルテキスト。サンプルテキスト。サンプルテキスト。サンプルテキスト。
+                    </dd>
+                </dl>
+
+            </section>
+
+            <section>
+
+                <h2>ご利用前に必ずお読み下さい<span>Read Me</span></h2>
+
+                <h3>利用規約のご案内</h3>
+                <p>このサイトは、<a href="https://xxx.com/">動物ホテル</a>と連携しているサイトです。
+                    必ず連携先<a href="https://xxx">利用規約</a>をご一読の上でご利用下さい。
+                </p>
+                <p><strong class="color-check">動物に安らぎを与えることを中心としています。</strong><br>
+                    サンプルサンプル</p>
+                <p><strong class="color-check">サイト掲載にご興味ある方はからお問い合わせ願います。</strong><br>
+                    <a href="https://***">If you are interested in listing on the site, please contact us.</a><a
+                        href="https://***">掲載登録</a>お願いします
+                </p>
+
+                <h3>サイトに関して詳しくはこちらとなります。</h3>
+                <p><a href="about.html">こちらをご覧下さい。</a></p>
+
+            </section>
+
+            <section>
+                <h2>おススメホテルのご紹介</h2>
+                <p><a href="https://q19cms.com/"
+                        target="_blank">様々な動物と暮らせるお部屋提供</a>Various animal hotelsをぜひとも活用してください<br>
+                    神奈川県横浜市にホテルがあります。</p>
+                <p>詳細はこちら<br>
+                    <a href="https://q19cms.com/files_m/cms_portal/" target="_blank"><img
+                            src="https://q19cms.com/files_m/cms_portal/images/img_main_banner.jpg" alt=""></a>
+                </p>
+            </section>
+
+        </main>
+
+        <!--開閉ブロック-->
+        <div id="menubar">
+
+            <h3><a href="list.html">おススメホテル</a></h3>
+            <ul class="submenu">
+                <li><a href="list.html">小型犬におススメホテル</a></li>
+                <li><a href="list.html">中型犬におススメホテル</a></li>
+                <li><a href="list.html">大型犬におススメホテル</a></li>
+                <li><a href="list.html">超大型犬におススメホテル</a></li>
+            </ul>
+
+            <h3><a href="list.html">お野菜を使ったレシピ</a></h3>
+
+            <h3><a href="list.html">スイーツレシピ</a></h3>
+
+            <ul class="submenu btn">
+                <li><a href="about.html">当サイトについて</a></li>
+                <li><a href="contact.html">お問い合わせ</a></li>
+            </ul>
+
+        </div>
+        <!--/#menubar-->
+
+    </div>
+    <!--/#container-->
+
+    <div id="footermenu">
+        <ul>
+            <li class="title">メニュー見出し</li>
+            <li><a href="#">サンプルメニューサンプルメニュー</a></li>
+            <li><a href="#">サンプルメニュー</a></li>
+            <li><a href="#">サンプルメニュー</a></li>
+            <li><a href="#">サンプルメニュー</a></li>
+        </ul>
+        <ul>
+            <li class="title">メニュー見出し</li>
+            <li><a href="#">サンプルメニューサンプルメニュー</a></li>
+            <li><a href="#">サンプルメニュー</a></li>
+            <li><a href="#">サンプルメニュー</a></li>
+            <li><a href="#">サンプルメニュー</a></li>
+        </ul>
+        <ul>
+            <li class="title">メニュー見出し</li>
+            <li><a href="#">サンプルメニューサンプルメニュー</a></li>
+            <li><a href="#">サンプルメニュー</a></li>
+            <li><a href="#">サンプルメニュー</a></li>
+        </ul>
+        <ul>
+            <li class="title">メニュー見出し</li>
+            <li><a href="#">サンプルメニューサンプルメニュー</a></li>
+            <li><a href="#">サンプルメニュー</a></li>
+        </ul>
+    </div>
+    
+
+    <footer>
+        <small>*******; <a href="index.html">Pet Hotel dot.com</a>animal-friendly hotel</small>
+        <span class="pr"><a href="https://template-party.com/" target="_blank"></a></span>
+    </footer>
+
+    <!--開閉ボタン-->
+    <div id="menubar_hdr">
+        <span></span><span></span><span></span>
+    </div>
+
+    <!--jQueryの読み込み-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!--このテンプレート専用のスクリプト-->
+    <script src="js/main.js"></script>
+
+    <!--ページの上部へ戻るボタン-->
+    <div class="pagetop"><a href="#"><i class="fas fa-angle-double-up"></i></a></div>
+
+    <!--スライドショー（slick）-->
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="js/slick.js"></script>
+
+</body>
+
+</html>
