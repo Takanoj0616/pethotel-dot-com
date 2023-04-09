@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>一覧画面</title>
+<script type="text/javascript"></script>
+</head>
+<body>
+    <h2>一覧画面</h2>
+    <div th:if="${personList.size() == 0}">
+        登録データが1件もありません。
+    </div>
+    <table th:if="${personList.size() >= 1}">
+        <thead>
+            <tr>
+                <th>id</th>
+                <th>名前</th>
+                <th>年齢</th>
+                <th>職業</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody th:each="person : ${personList}" th:object=${person}>
+            <td th:text="*{id}"></td>
+            <td th:text="*{name}"></td>
+            <td th:text="*{age}"></td>
+            <td th:text="*{business}"></td>
+            <td th:text="*{email}"></td>
+        </tbody>
+    </table>
+
+</body>
+</html>
