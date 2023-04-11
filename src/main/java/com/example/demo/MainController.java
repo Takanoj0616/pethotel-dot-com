@@ -17,9 +17,9 @@ public class MainController {
 	private final PersonRepository repository;
 
 	@Autowired
-    public BaseController(PersonRepository repository){
-        this.repository = repository;
-    }
+	public MainController(PersonRepository repository) {
+		this.repository = repository;
+	}
 
 	@GetMapping("/")
 	public String write1() {
@@ -27,8 +27,13 @@ public class MainController {
 	}
 
 	@GetMapping("/item")
-	public String home(@ModelAttribute Person person) {
+	public String home() {
 		return "item";
+	}
+
+	@GetMapping("/form")
+	public String home(@ModelAttribute Person person) {
+		return "form";
 	}
 
 	@PostMapping("/form")
