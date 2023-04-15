@@ -31,6 +31,21 @@ public class MainController {
 		return "item";
 	}
 
+	@GetMapping("/list")
+	public String list() {
+		return "list";
+	}
+
+	@GetMapping("/about")
+	public String about() {
+		return "about";
+	}
+
+	@GetMapping("/confirm")
+	public String coform() {
+		return "confirm";
+	}
+
 	@GetMapping("/form")
 	public String home(@ModelAttribute Person person) {
 		return "form";
