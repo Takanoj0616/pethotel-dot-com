@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html lang="ja" xmlns:th="http://www.thymeleaf.org">
+
 <head>
-<meta charset="UTF-8">
-<title>登録完了画面</title>
-<script type="text/javascript"></script>
+  <meta charset="UTF-8">
+  <title>登録完了画面</title>
+  <script type="text/javascript"></script>
 </head>
+
 <body>
-    <h2>登録完了画面</h2>
-    <p>名前：[[${person.name}]]</p>
-    <p>年齢：[[${person.age}]]</p>
-    <p>住所：[[${person.business}]]</p>
-    <p>Eメール：[[${person.email}]]</p>
-    <form th:action="@{/getlist}" method="post"><button>一覧取得</button></form>
+  <h2>登録完了画面</h2>
+  <p th:text=“‘名前：’ + ${person.name}“></p>
+  <p th:text=“‘年齢：’ + ${person.age}“></p>
+  <p th:text=“‘住所：’ + ${person.address}“></p>
+  <p th:text=“‘Eメール：’ + ${person.email}“></p>
+  <form th:action="@{/getlist}" method="post"><button>一覧取得</button></form>
 </body>
+
 </html>
+
