@@ -12,10 +12,26 @@
             <h2>入力画面</h2>
             <form th:action="@{/form}" th:object="${person}" method="post" novalidate>
                 <label for="name">名前：</label>
-                <input type="text">
+                <input type="text" tabindex="*{name}" th:errorclass="is-invalid">
+                <span class="errorStr" th:errors="*{name}"></span>
+                <br>
+
+                <label for="age">年齢：</label>
+                <input type="number" th:field="*{age}">
+                <span class="errorStr" th:errors="*{age}"></span>
+                <br>
+
+                <label for="address">住所：</label>
+                <input type="text" th:field="*{address}">
+                <span class="errorStr" th:errors="*{address}"></span>
+                <br>
                 
+                <label for="email">Eメール：</label>
+                <input type="text" th:field="*{email}">
+                <span class="errorStr" th:errors="*{email}"></span>
+                <br>
+
                 <button>送信</button>
             </form>
-            <form th:action="@{/getlist}" method="post"><button>一覧取得</button></form>
         </body>
 </html>
