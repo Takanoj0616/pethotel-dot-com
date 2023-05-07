@@ -51,6 +51,51 @@ public class MainController {
 		return "form";
 	}
 
+	@GetMapping("/show")
+	public String show() {
+		return "show";
+	}
+
+	@GetMapping("/show2")
+	public String show2() {
+		return "show2";
+	}
+
+	@GetMapping("/sample1")
+	public String sample1() {
+		return "sampel1";
+	}
+
+	@GetMapping("/sample2")
+	public String sample2() {
+		return "sample2";
+	}
+
+	@GetMapping("/sample3")
+	public String sample3() {
+		return "sample3";
+	}
+
+	@GetMapping("/sample4")
+	public String sample4() {
+		return "sample4";
+	}
+
+	@GetMapping("/sample5")
+	public String sample5() {
+		return "sample5";
+	}
+
+	@GetMapping("/sample6")
+	public String sample6() {
+		return "sample6";
+	}
+
+	@GetMapping("/sample7")
+	public String sample7() {
+		return "sample7";
+	}
+
 	@PostMapping("/form")
 	public String result(@Validated @ModelAttribute Person person, BindingResult result) {
 		if (result.hasErrors()) {
