@@ -96,6 +96,16 @@ public class MainController {
 		return "sample7";
 	}
 
+	@GetMapping("/sample8")
+	public String sample8() {
+		return "sample8";
+	}
+
+	@GetMapping("/sample9")
+	public String sample9() {
+		return "sample9";
+	}
+
 	@PostMapping("/form")
 	public String result(@Validated @ModelAttribute Person person, BindingResult result) {
 		if (result.hasErrors()) {

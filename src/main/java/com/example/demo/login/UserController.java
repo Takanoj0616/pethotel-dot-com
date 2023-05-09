@@ -25,7 +25,7 @@ public class UserController {
 	@GetMapping(value = "/add")
 	public String displayAdd(Model model) {
 		model.addAttribute("userRequest", new UserRequest());
-		return "index";
+		return "add";
 	}
 
 	@RequestMapping(value = "/create", method = RequestMethod.POST)
@@ -41,7 +41,7 @@ public class UserController {
 		}
 		// ユーザー情報の登録
 		userService.create(userRequest);
-		return "redirect:/";
+		return "redirect:/index";
 	}
 
 }
